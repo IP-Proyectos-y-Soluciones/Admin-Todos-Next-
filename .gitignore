@@ -18,6 +18,8 @@
 
 # production
 /build
+!.vscode/setting.json
+/!.vscode/*
 
 # misc
 .DS_Store
