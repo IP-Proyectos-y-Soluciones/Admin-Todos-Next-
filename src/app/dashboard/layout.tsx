@@ -2,23 +2,21 @@
 import { Sidebar, TopMenu } from '@/components';
 
 export default function DashboardLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <>
-      <Sidebar/>
-      
+      <Sidebar />
+
       {/* Main Layout content - Contenido principal del Layout */}
-      <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%] min-h-screen">
+      <div className="mb-6 ml-auto min-h-screen lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
         <TopMenu />
 
         {/* TODO: Contenido en el Layout.tsx */}
-        <div className="px-6 pt-6">
-
-          { children }
-
+        <div className="m-2 rounded bg-white p-2 px-6 pt-6 pb-5">
+          {children}
         </div>
       </div>
     </>
