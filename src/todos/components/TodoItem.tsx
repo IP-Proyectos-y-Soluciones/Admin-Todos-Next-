@@ -44,7 +44,7 @@ export const TodoItem = ( { todo, toggleTodo }: Props ) => {
 						: <IoSquareOutline size={30} />
 					}
 				</div>
-				<div className="text-center sm:text-left">
+				<div className="text-center text-black sm:text-left">
           { todoOptimistic.description }
         </div>
 			</div>
